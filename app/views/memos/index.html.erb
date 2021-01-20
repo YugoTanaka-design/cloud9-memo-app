@@ -1,0 +1,15 @@
+<h1>Memo List</h1>
+<!--<a href="/new" class="btn btn-primary">新規作成</a>-->
+
+<div class="row">
+    <% @memos.each do |memo| %>
+        <div class="col-sm-4">
+            <div class="card border-secondary" style="width: 20rem;">
+                <div class="card-header bg-secondary"><%=memo.title%></div>
+                <div class="card-body"><%=memo.body%></div>
+            </div>
+        </div>
+    <% end %>
+</div>
+    
+        
