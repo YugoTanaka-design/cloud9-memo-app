@@ -5,7 +5,12 @@
     <% @memos.each do |memo| %>
         <div class="col-sm-4">
             <div class="card " style="width: 20rem;">
-                <div class="card-header bg-secondary"><%=memo.title%></div>
+                <div class="card-header bg-secondary"><h4><%=memo.title%></h4>
+                <p>カテゴリー未設定</p>
+                <div class="btns">
+                    <a href="/memos/<%=memo.id%>" data-method="delete"><i class="fas fa-trash-alt"></i></a> 
+                    <a href="/memos/<%=memo.id%>/edit"><i class="fas fa-edit"></i></a> </div>
+                </div>
                 <div class="card-body"><%=memo.body%></div>
             </div>
         </div>
