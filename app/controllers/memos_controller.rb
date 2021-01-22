@@ -5,7 +5,7 @@ class MemosController < ApplicationController
   def new
   end
   def create
-    Memo.create(title:params["memos"]["title"],body:params["memos"]["body"])
+    Memo.create(title:params["memos"]["title"],body:params["memos"]["body"],category_id:params["memos"]["category_id"])
     redirect_to"/"
   end
   def destroy

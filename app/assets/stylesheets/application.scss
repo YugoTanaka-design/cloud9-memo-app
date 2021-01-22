@@ -17,6 +17,10 @@
 //  @import "bootstrap-sprockets";
  @import "bootstrap";
  
+ .card-flame{
+  margin-bottom:18px;
+ }
+ 
  .btns{
     //  text-align:right;
     display:flex;
@@ -24,7 +28,28 @@
     margin-top:-30px;
 }
 
-.fas{
- color:#e35959;
- padding-left:5px;
+.memo-header{
+  // background-color:#aaaeb5;
+  background-color:#626366;
+  h4{
+   
+  font-weight:bold;
+  }
+}
+
+.trash-btn{
+ color:#536299;
+ padding-right:10px;
+}
+
+.edit-btn{
+ color:#7e7c80;
+}
+
+@media(max-width:768px){
+ .card-flame{
+  // height:140px;
+  // width:100%;
+  margin-bottom:10px;
+ }
 }
