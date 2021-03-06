@@ -20,6 +20,7 @@ class MemosController < ApplicationController
     memo=Memo.find(params["id"])
     memo.title= params["memos"]["title"]
     memo.body= params["memos"]["body"]
+    memo.category_id= params["memos"]["category_id"]
     memo.save
     redirect_to "/"
   end
